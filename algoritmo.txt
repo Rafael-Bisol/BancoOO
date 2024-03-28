@@ -1,0 +1,19 @@
+ao criar a conta, perguntar se o usuário quer que seja informado o saldo inicial
+depois disso fazer um depósito e um saque
+
+conta bancária
+        precisa ser iniciada com:
+    nome do titular -> pode mudar
+    número da conta -> não pode mudar
+    depósito inicial -> pode ser qualquer valor a partir de 0
+
+o saldo não pode ser mudado diretamente, só através de saques e depósitos
+    saques tem taxa de 5 verdinhas por operação
+    -> a conta pode ficar com saldo negativo se o saldo não for suficiente
+        para pagar a taxa
+
+----------------------------
+
+1. pedir nome, número da conta e depósito incial
+2. criar a conta do banco (objeto Conta, variável conta)
+3. 
