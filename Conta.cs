@@ -7,7 +7,7 @@ namespace BancoOO_aula
     {
         private string _nome;
         public double Saldo{get; private set;}
-        public int _numConta;
+        public int NumeroConta{get; private set;}
 
         public Conta(string nome)
         {
@@ -18,7 +18,7 @@ namespace BancoOO_aula
             }
             _nome = nome;
             Saldo = 0;
-            _numConta = 0;
+            NumeroConta = 0;
         }
 
         public Conta(string nome, double depositoInicial) : this(nome)
@@ -29,7 +29,7 @@ namespace BancoOO_aula
                 return;
             }
             Saldo = depositoInicial;
-            _numConta = 0;
+            NumeroConta = 0;
         }
 
         public Conta(string nome, double depositoInicial, int numConta) : this(nome, depositoInicial)
@@ -39,7 +39,7 @@ namespace BancoOO_aula
                 Console.WriteLine("O número da conta não pode ser negativo.");
                 return;
             }
-            _numConta = numConta;
+            NumeroConta = numConta;
         }
 
 
@@ -60,7 +60,7 @@ namespace BancoOO_aula
             }
         }
         
-        public void Deposit(double val)
+        public void Deposito(double val) // Deposit
         {
             if (val <= 0)
             {
@@ -70,7 +70,7 @@ namespace BancoOO_aula
             Saldo += val;
         }
 
-        public void Withdraw(double val)
+        public void Saque(double val) // Withdraw
         {
             if (val <= 0)
             {
