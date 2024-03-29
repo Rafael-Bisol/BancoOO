@@ -27,18 +27,18 @@ namespace BancoOO_aula
                 deposito = double.Parse(Console.ReadLine());
             }
             Conta conta1 = new Conta(nome, deposito, numConta);
-            Console.WriteLine($"Seu saldo é: ${conta1.Saldo:c}\n");
+            Console.WriteLine($"Seu saldo é: {conta1.Saldo:c}\n");
 
             Console.Write("Por favor, faça um depósito\n>");
             deposito = double.Parse(Console.ReadLine());
             conta1.Deposito(deposito);
 
-            Console.WriteLine($"Seu saldo é ${conta1.Saldo:c}");
+            Console.WriteLine($"Seu saldo é {conta1.Saldo:c}");
             
             Console.Write("Faça um saque (atente-se: há uma taxa de R$5,00 por saque)\n> ");
             conta1.Saque(double.Parse(Console.ReadLine()));
 
-            Console.WriteLine($"Seu saldo atualizado é ${conta1.Saldo:c}");
+            Console.WriteLine($"Seu saldo atualizado é {conta1.Saldo:c}");
         }
     }
 }
