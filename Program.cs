@@ -26,6 +26,7 @@ namespace BancoOO_aula
                 Console.Write("Digite o valor do deposito inicial:\n> ");
                 deposito = double.Parse(Console.ReadLine());
             }
+            
             Conta conta1 = new Conta(nome, deposito, numConta);
             Console.WriteLine($"Seu saldo é: {conta1.Saldo:c}");
 

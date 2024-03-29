@@ -84,5 +84,10 @@ namespace BancoOO_aula
             }
             Saldo -= val + 5;
         }
+
+        public override string ToString()
+        {
+            return $"Conta\n\tNome: {_nome}\n\tConta: {NumeroConta:n4}\n\tSaldo: {Saldo:c}\n";
+        }
     }
 }
