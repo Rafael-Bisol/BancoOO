@@ -34,7 +34,7 @@ namespace BancoOO_aula
 
         public Conta(string nome, double depositoInicial, int numConta) : this(nome, depositoInicial)
         {
-            if (numConta < 0 || numConta.ToString().Length > 4)
+            if (numConta < 0 || numConta > 9999)
             {
                 Console.WriteLine("O número da conta não pode ser negativo.");
                 return;

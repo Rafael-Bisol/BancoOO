@@ -13,10 +13,10 @@ namespace BancoOO_aula
             // Conta conta1 = new Conta(Console.ReadLine());
             string nome = Console.ReadLine();
 
-            Console.Write("\nDigite o número inicial da conta\n> ");
+            Console.Write("Digite o número inicial da conta\n> ");
             int numConta = int.Parse(Console.ReadLine());
 
-            Console.Write("\nDeseja fazer um depósito inicial? (S/N)\n> ");
+            Console.Write("Deseja fazer um depósito inicial? (S/N)\n> ");
             string resposta = Console.ReadLine();
 
             double deposito = 0;
@@ -29,7 +29,7 @@ namespace BancoOO_aula
             Conta conta1 = new Conta(nome, deposito, numConta);
             Console.WriteLine($"Seu saldo é: {conta1.Saldo:c}\n");
 
-            Console.Write("Por favor, faça um depósito\n>");
+            Console.Write("Por favor, faça um depósito\n> ");
             deposito = double.Parse(Console.ReadLine());
             conta1.Deposito(deposito);
 
