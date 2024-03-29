@@ -40,6 +40,8 @@ namespace BancoOO_aula
             conta1.Saque(double.Parse(Console.ReadLine()));
 
             Console.WriteLine($"Seu saldo atualizado é {conta1.Saldo:c}");
+
+            Console.WriteLine($"Chamando toString: {conta1.ToString()}");
         }
     }
 }
